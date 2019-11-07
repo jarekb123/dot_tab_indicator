@@ -3,8 +3,8 @@ import 'package:flutter/widgets.dart';
 
 const kDefaultDotIndicatorRadius = 3.0;
 
-class DotIndicator extends Decoration {
-  const DotIndicator({this.indicatorColor, this.radius = kDefaultDotIndicatorRadius});
+class DotTabIndicator extends Decoration {
+  const DotTabIndicator({this.indicatorColor, this.radius = kDefaultDotIndicatorRadius});
 
   final Color indicatorColor;
   final double radius;
@@ -18,7 +18,7 @@ class DotIndicator extends Decoration {
 class _DotPainter extends BoxPainter {
   _DotPainter(this.decoration, VoidCallback onChanged) : super(onChanged);
 
-  final DotIndicator decoration;
+  final DotTabIndicator decoration;
 
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
